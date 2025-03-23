@@ -1,0 +1,31 @@
+class Box {
+    double depth;
+    double width;
+    double height;
+
+    Box(Box ob) {
+        depth =ob.depth;
+        width = ob.width;
+        height = ob.height;
+    }
+     Box(double d, double w, double h) {
+        depth = d;
+        width = w;
+        height = h;
+    }
+    double volume(){
+    return width*height*depth;
+}
+}
+	
+class Obj
+{
+	public static void main(String args[])
+		{
+			Box mybox1=new Box(10,20,15);
+			Box myclone =new Box(mybox1);
+			double vol;
+			vol=myclone.volume();
+			System.out.println("volume of myclone is"+vol);
+		}
+}
