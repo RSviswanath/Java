@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class discount{
+public static void main(String args[])
+{
+ Scanner input = new Scanner(System.in);
+  System.out.println("Enter the quantity: ");
+  int quantity = input.nextInt();
+  System.out.println("Enter the price: ");
+  float price = input.nextFloat();
+  float total = quantity * price;
+   System.out.println("Enter the Discount in percentage: ");
+   double dis =input.nextDouble();
+   System.out.println("Bill: "+ total);
+   
+
+   double discount = total * dis/100;
+   double totalAmt = total-discount;
+  System.out.println(" discounted Total: " + totalAmt);
+input.close();
+}
+}
