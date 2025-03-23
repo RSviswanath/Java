@@ -1,0 +1,22 @@
+public class ex1
+{
+    public static void main(String [] args)
+    {
+   	int time=20;
+    	String result =time<18?"good day.":"good evening";
+    	System.out.println(result);
+    }
+}
+
+
+
+public class ex1
+{
+	public static void main(String[] args)
+	{
+		var x=100;
+		var z='a';
+		System.out.println(x);
+		System.out.println(z);
+	}
+}
